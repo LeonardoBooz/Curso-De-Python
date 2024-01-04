@@ -1,0 +1,4 @@
+banana, 4.89
+açucar, 8.99
+café, 14.98
+alcatra, 35.62

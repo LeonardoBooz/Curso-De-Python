@@ -1,0 +1,6 @@
+Larissa, maior de idade
+Gabriel, maior de idade
+Mariana, maior de idade
+Lucas, menor de idade
+Isabela, menor de idade
+Rafael, menor de idade

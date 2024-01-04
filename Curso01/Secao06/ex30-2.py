@@ -1,0 +1,5 @@
+num=int(input("Digite um número: "))
+total=0
+for e in range(1, num, +2):
+    total+=num
+print(total+(2*num-1))

@@ -1,0 +1,39 @@
+class Moto:
+    def __init__(self, marca, modelo, cor, marcha, menor_marcha = -1, maior_marcha = 5, ligada = True):
+        self.marca = marca
+        self.modelo = modelo
+        self.cor = cor
+        self.menor_marcha = menor_marcha
+        self.maior_marcha = maior_marcha
+        self.ligada = ligada
+
+        if type(marcha) == int:
+            self.marcha = marcha
+        else:
+            print('A marcha deve ser um valor inteiro')
+    
+    def imprimir(self):
+        print(self.__dict__)
+
+    def marchaAcima(self):
+        if self.marcha < self.maior_marcha:
+            self.marcha += 1
+            print(f'Marcha: {self.marcha}')
+        else:
+            print('Já esta na maior marcha')
+    
+    def marchaBaixo(self):
+        if self.marcha > self.maior_marcha:
+            self.marcha -= 1
+            print(f'Marcha: {self.marcha}')
+        else:
+            print('Já esta na menor marcha')
+
+    def ligar(self):
+        if self.ligada == True:
+            self.ligada = False
+        else:
+            self.ligada = True
+
+mt = Moto('Suzuki', 'cb445', 'vermelho', 4)
+mt.imprimir()
